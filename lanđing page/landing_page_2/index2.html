@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+   <section>
+       <div class="circle"></div>
+       <header>
+           <a href="#"><img src="./assets/images/logo.png" alt="" class="logo"></a>
+           <ul class="navigation">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Menu</a></li>
+               <li><a href="#">What's New</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </header>
+       <div class="content">
+           <div class="textBox">
+               <h2>Taste the Feeling</h2>
+               <p>This report is a reflection of how, together with our bottling partners, we navigated the COVID-19 crisis as a global business while advancing our environmental, social and governance (ESG) priorities. Having passed several of our 2020 milestone ESG goals, we are working toward new plans, including our 2025 packaging goals, 2030 climate goal, new 2030 water strategy and streamlining our global beverage portfolio – all of which are detailed in the report.</p>
+               <a href="#">Learn More</a>
+           </div>
+
+           <div class="imgBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/cocacola1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/cocacola2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/cocacola3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/cocacola4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/cocacola5.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/cocacola6.png" alt=""></div>
+                </div>
+           </div>
+       </div>
+       <ul class="sci">
+           <li><a href="#"><img src="./assets/images/facebook.png" alt=""></a></li>
+           <li><a href="#"><img src="./assets/images/instagram.png" alt=""></a></li>
+           <li><a href="#"><img src="./assets/images/twitter.png" alt=""></a></li>
+       </ul>
+   </section> 
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop:true,
+    });
+  </script>
+</body>
+</html>

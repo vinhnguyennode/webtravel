@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ff5e8e;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #0169b2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px 18px;
+    user-select: none;
+}
+
+header ul li a.active,
+header ul li a:hover {
+   background-color: #0169b2;
+   color: #fff;
+   border-radius: 30px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    padding: 100px 0;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #0169b2;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.content .textBox a {
+
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #ff5e8e;
+    color: #fff;
+    border-radius: 30px;
+    font-family: 500;
+    font-size: 1.2em;
+}
+
+.sci {
+    position: absolute;
+    bottom: -100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin-left: 15px;
+    background-color: #0169b2;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.sci li a:hover {
+    background-color: #ff5e8e;
+    transform: translateY(-10px);
+}
+
+.sci li a img {
+    filter: invert(1);
+    transform: scale(0.6);
+}
+
+.mosque {
+    position: absolute;
+    top: 170px;
+    right: 0;
+    max-width: 700px;
+}
+
